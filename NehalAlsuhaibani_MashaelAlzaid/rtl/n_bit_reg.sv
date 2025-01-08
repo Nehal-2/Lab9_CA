@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module n_bit_reg #(parameter regWidth = 64)
+module n_bit_reg #(parameter n = 64)
 (
 
 input logic clk, 
 input logic reset_n, 
-input logic [regWidth -1:0] data_in, 
-output logic [regWidth -1:0] data_out
+input logic [n -1:0] data_in, 
+output logic [n -1:0] data_out
 
     );
  
